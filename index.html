@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	
@@ -12,25 +12,26 @@
 </head>
 
 <body>
-	<div id="map" data-bind="click: hideElements"></div>
+	<div id="map" class="map" data-bind="click: hideElements"></div>
 	
-	<div id="Title"><h2>Top Rated Places in India</h2></div> 
+	
+	<div id="title" class="title"><h2>Top Rated Places in India</h2></div> 
 
-	<div id="csk" data-bind="click: showElements, clickBubble: false">
+	<div id="csk" class="csk" data-bind="click: showElements, clickBubble: false">
 		
 	</div>
 
 	<div data-bind="css: navStatus">
-		<input id="search" placeholder="Search here" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
-		<div id="list-holder">
-			<ul id="list-view" data-bind="foreach: visible">
-				<li id="list-name" data-bind="text: name, click: $parent.showInfo"></li>
-				<hr>
+		<input id="search" class="search" placeholder="Search here" data-bind="textInput: userInput, event: {keyup: filterMarkers}">
+		<div id="list-holder" class="list-holder">
+			<ul id="list-view" class="list-view"  data-bind="foreach: visible">
+				<li id="list-name" class="list-name" data-bind="text: name, click: $parent.showInfo"></li>
+				
 			</ul>
 		</div>
 	</div>
 	
-	<div id="error"></div>
+	<div id="error" class="error"></div>
 	
 
 	<script src="js/knockout.js"></script>
