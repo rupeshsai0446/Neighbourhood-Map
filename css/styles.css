@@ -6,11 +6,11 @@ body {
   padding: 0;
 }
 
-#map {
+.map {
   height: 100%;
 }
 
-#Title{
+.title {
   position: fixed;
   top: 0px;
   text-align:center;
@@ -22,7 +22,7 @@ svg {
   display: none;
 }
 
-#search {
+.search {
   position: fixed;
   left:1.5%;
   top: 45px;
@@ -31,7 +31,7 @@ svg {
   font-size: 15px;
 }
 
-#list-view {
+.list-view {
   position: fixed;
   height: 65%;
   left:1%;
@@ -45,11 +45,11 @@ svg {
   font-size: 25px;
 }
 
-#list-name {
+.list-name {
   color: white ;
 }
 
-#error {
+.error {
   position: fixed;
   top: 350px;
   left: 35%;
@@ -66,9 +66,10 @@ content: "";
 }
 li:hover{
   background-color:red;
+  border-radius:25px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 50px) {
 
     h2 {
       font-size: 12px;
@@ -82,7 +83,7 @@ li:hover{
       display: none;
     }
 
-    #csk {
+    .csk {
     position: fixed;
     left: 85%;
     right: 0;
@@ -90,43 +91,46 @@ li:hover{
     width: 40px;
     }
 
-    #Title {
-    position: fixed;
-    top: 0px;
-    width: 30%;
-    left: 5%;
+    .title {
+      position: fixed;
+      top: 0px;
+      text-align:center;
+      width: 100%;
+      background-color:orange;
     }
-
+    
     .navClosed {
       display: none;
     }
 
-    #search {
-    position: fixed;
-    left: 5%;
-    top: 40px;
-    height: 30px;
-    width: 29%;
-    font-size: 8px;
+    .search {
+      position: fixed;
+      left:1.5%;
+      top: 45px;
+      height: 30px;
+      width: 27%;
+      font-size: 15px;
     }
-
-    #list-view {
-    position: fixed;
-    height:27%;
-    overflow: auto;
-    top: 80px;
-    left: 5%;
-    width: 30%;
-    background-color: #000;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
+    
+    .list-view {
+      position: fixed;
+      height: 65%;
+      left:1%;
+      overflow: auto;
+      top: 85px;
+    
+      width: 20%;
+      background-color: blue;
+      margin: 5px;
+      padding: 50px;
+      font-size: 25px;
     }
-
-    #error {
-    position: fixed;
-    top: 320px;
-    left: 5%;
-    width: 30%;
+    
+    .error {
+      position: fixed;
+      top: 350px;
+      left: 35%;
+      width: 20%;
     }
+    
 }
