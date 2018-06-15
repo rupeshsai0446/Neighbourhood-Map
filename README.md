@@ -17,3 +17,13 @@ Either clone the repository using GIT, or use the download ZIP link on the right
 
 * [Google Maps](https://developers.google.com/maps/)
 * [Foursquare](https://developer.foursquare.com/)
+
+## Instructions to run hosted version of project
+
+1.Open the settings of project repository in github.
+
+2.Then scroll down through it untill GitHub Pages.
+
+3.In the GitHub pages you will find a link. Copy it.
+
+4.Open your modern browser and paste the copied link in it.
