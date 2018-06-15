@@ -1,0 +1,132 @@
+html,
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+}
+
+#Title{
+  position: fixed;
+  top: 0px;
+  text-align:center;
+  width: 100%;
+  background-color:orange;
+}
+
+svg {
+  display: none;
+}
+
+#search {
+  position: fixed;
+  left:1.5%;
+  top: 45px;
+  height: 30px;
+  width: 27%;
+  font-size: 15px;
+}
+
+#list-view {
+  position: fixed;
+  height: 65%;
+  left:1%;
+  overflow: auto;
+  top: 85px;
+
+  width: 20%;
+  background-color: blue;
+  margin: 5px;
+  padding: 50px;
+  font-size: 25px;
+}
+
+#list-name {
+  color: white ;
+}
+
+#error {
+  position: fixed;
+  top: 350px;
+  left: 35%;
+  width: 20%;
+}
+
+/*Credit https://gist.github.com/jedsundwall/586144*/
+li:after {
+content: ", ";
+}
+
+li:last-child:after {
+content: "";
+}
+li:hover{
+  background-color:red;
+}
+
+@media only screen and (max-width: 650px) {
+
+    h2 {
+      font-size: 12px;
+    }
+
+    /*#iWindow {
+      height: 150px;
+    }*/
+
+    #pic {
+      display: none;
+    }
+
+    #csk {
+    position: fixed;
+    left: 85%;
+    right: 0;
+    top: 0;
+    width: 40px;
+    }
+
+    #Title {
+    position: fixed;
+    top: 0px;
+    width: 30%;
+    left: 5%;
+    }
+
+    .navClosed {
+      display: none;
+    }
+
+    #search {
+    position: fixed;
+    left: 5%;
+    top: 40px;
+    height: 30px;
+    width: 29%;
+    font-size: 8px;
+    }
+
+    #list-view {
+    position: fixed;
+    height:27%;
+    overflow: auto;
+    top: 80px;
+    left: 5%;
+    width: 30%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    }
+
+    #error {
+    position: fixed;
+    top: 320px;
+    left: 5%;
+    width: 30%;
+    }
+}
